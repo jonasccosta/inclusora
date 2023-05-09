@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
@@ -12,11 +12,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InclusionCheckButtonComponent } from './inclusion-check-button/inclusion-check-button.component';
 import { TextInputComponent } from './text-input/text-input.component';
 import { FormComponent } from './form/form.component';
+import {MatIconModule} from '@angular/material/icon';
+import { PeopleImageComponent } from './people-image/people-image.component'
 
 @NgModule({
   declarations: [
     AppComponent
-  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent],
+  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +27,8 @@ import { FormComponent } from './form/form.component';
     MatInputModule,
     MatFormFieldModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
