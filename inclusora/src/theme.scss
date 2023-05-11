@@ -2,6 +2,8 @@
 
 @include mat.core();
 
+
+
 $my-primary: mat.define-palette(mat.$deep-purple-palette, 400);
 $my-accent: mat.define-palette(mat.$green-palette, 200);
 $my-typography: mat.define-typography-config(
@@ -13,6 +15,8 @@ $my-theme: mat.define-light-theme((
    accent: $my-accent,
  ), typography: $my-typography
 ));
+
+
 
 
 @include mat.all-component-themes($my-theme);

@@ -1,13 +1,17 @@
 
   
   .text-input {
+    width: -webkit-calc(70% - 20px);
+    width: -moz-calc(70% - 20px);
+    width: calc(70% - 20px);
+    float: left;
     bottom: 0;
-    width: 100%;
-    min-height: 75%;
-    background-color: white;
-    border: none;
-    outline: none;
-    padding: none;
+   
+  }
+
+  .text-input-box{
+    height: 75vh;
+    display:block;
   }
 
 

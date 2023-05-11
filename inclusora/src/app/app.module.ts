@@ -13,12 +13,13 @@ import { InclusionCheckButtonComponent } from './inclusion-check-button/inclusio
 import { TextInputComponent } from './text-input/text-input.component';
 import { FormComponent } from './form/form.component';
 import {MatIconModule} from '@angular/material/icon';
-import { PeopleImageComponent } from './people-image/people-image.component'
+import { PeopleImageComponent } from './people-image/people-image.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent
-  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent],
+  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
