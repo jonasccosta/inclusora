@@ -14,7 +14,9 @@ import { TextInputComponent } from './text-input/text-input.component';
 import { FormComponent } from './form/form.component';
 import {MatIconModule} from '@angular/material/icon';
 import { PeopleImageComponent } from './people-image/people-image.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import {ReactiveFormsModule} from '@angular/forms'
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { FooterComponent } from './footer/footer.component'
     MatFormFieldModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
