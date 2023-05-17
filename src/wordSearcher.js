@@ -1,10 +1,15 @@
+const genderData = require('../data/gender.json');
 function wordSearcher(userText) {
-    console.log(userText);
-    if (userText && userText.includes('Hello')) {
-      return 'FormData contains "Hello"';
-    } else {
-      return 'FormData does not contain "Hello"';
+    result = []
+
+    for(const [key, value] of Object.entries(genderData)){
+        if (userText && userText.includes(key)) {
+            result.push([key, value]);
+        }
     }
+   
+
+    return result;
   }
   
   module.exports = {
