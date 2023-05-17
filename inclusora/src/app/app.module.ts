@@ -15,7 +15,8 @@ import { FormComponent } from './form/form.component';
 import {MatIconModule} from '@angular/material/icon';
 import { PeopleImageComponent } from './people-image/people-image.component';
 import { FooterComponent } from './footer/footer.component';
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,8 +32,9 @@ import {ReactiveFormsModule} from '@angular/forms'
     MatFormFieldModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

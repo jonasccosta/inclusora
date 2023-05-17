@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-form',
@@ -10,7 +11,7 @@ export class FormComponent {
 
   textForm: FormGroup;
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private http: HttpClient) {}
 
   ngOnInit(){
     this.textForm = this.fb.group({
@@ -21,10 +22,17 @@ export class FormComponent {
   }
 
   onSubmit(){
-    console.log(this.sendText());
+    const userInput = this.textForm.get('userText')?.value;
+    this.http.post('/', { userInput })
+    .subscribe({
+      next: (response) => {
+        console.log(response)
+      },
+      error: (error) => {
+        console.log(error)
+      }
+    });
   }
 
-  sendText(){
-    return this.textForm.get("userText")?.value;
-  }
+
 }
