@@ -19,13 +19,13 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { SuggestionCardComponent } from './suggestion-card/suggestion-card.component';
 import {MatCardModule} from '@angular/material/card';
-import { ResultsPageComponent } from './results-page/results-page.component';
+import { ResultsPanelComponent } from './results-panel/results-panel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
-  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPageComponent],
+  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPanelComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
