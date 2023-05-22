@@ -1,0 +1,15 @@
+mat-card{
+    background-color: #7E57C2;
+    color: white;
+    border-radius: 15px;
+    width: -webkit-calc(20% - 20px);
+    width: -moz-calc(20% - 20px);
+    width: calc(20% - 20px);
+    float: center;
+    position:fixed;
+}
+
+mat-card-content{
+    padding-top: 0;
+    margin-top: 0;
+}

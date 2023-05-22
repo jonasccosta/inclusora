@@ -17,12 +17,15 @@ import { PeopleImageComponent } from './people-image/people-image.component';
 import { FooterComponent } from './footer/footer.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { SuggestionCardComponent } from './suggestion-card/suggestion-card.component';
+import {MatCardModule} from '@angular/material/card';
+import { ResultsPageComponent } from './results-page/results-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
-  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent],
+  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule, 
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

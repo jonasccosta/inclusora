@@ -1,8 +1,9 @@
-const genderData = require('../data/gender.json');
-function wordSearcher(userText) {
+
+
+function wordSearcher(userText, wordData) {
     result = []
 
-    for(const [key, value] of Object.entries(genderData)){
+    for(const [key, value] of Object.entries(wordData)){
         if (userText && userText.includes(key)) {
             result.push([key, value]);
         }
