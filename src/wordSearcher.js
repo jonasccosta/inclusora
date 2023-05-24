@@ -1,11 +1,12 @@
 
 
 function wordSearcher(userText, wordData) {
-    result = []
+    result = {triggerWords: {}}
+    
 
     for(const [key, value] of Object.entries(wordData)){
         if (userText && userText.includes(key)) {
-            result.push([key, value]);
+            result.triggerWords[key] = value;
         }
     }
    

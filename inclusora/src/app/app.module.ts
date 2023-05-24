@@ -20,12 +20,13 @@ import { FormsModule } from '@angular/forms';
 import { SuggestionCardComponent } from './suggestion-card/suggestion-card.component';
 import {MatCardModule} from '@angular/material/card';
 import { ResultsPanelComponent } from './results-panel/results-panel.component';
+import { ResultsPageComponent } from './results-page/results-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
-  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPanelComponent],
+  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPanelComponent, ResultsPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

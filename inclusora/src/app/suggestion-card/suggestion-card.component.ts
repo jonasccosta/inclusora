@@ -7,24 +7,21 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./suggestion-card.component.css']
 })
 export class SuggestionCardComponent {
+  title : string;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
     console.log("INIT")
-    this.http.get<string>('/').subscribe((data: string) => {
-      // Handle the received data
-      if(data == null){
-        console.log("PEPE")
+    this.http.get('/result', {responseType: 'json'}).subscribe({
+      next: (response) => {
+      const map = response[Object.keys(response)[0]];
+      console.log(Object.keys(map)[0]);
+       this.title = Object.keys(map)[0];
+      },
+      error: (error) => {
+        console.log(error)
       }
-
-      else{
-        console.log(data);
-      }
-      
-      
-      // Assign the data to a variable in your component for further use
-      // this.myData = data;
     });
   }
 }

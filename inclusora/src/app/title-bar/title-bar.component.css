@@ -18,3 +18,10 @@
 .logo-image {
     height: 50px;
   }
+
+  a {
+    color: #FFFFFF;
+}
+a:visited {
+    color: #FFFFFF;
+}

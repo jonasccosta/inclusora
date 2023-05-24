@@ -1,4 +1,4 @@
 <form class="form" [formGroup]="textForm" (ngSubmit)="onSubmit()" method="post" action="/">
-    <app-text-input [textForm]="textForm"></app-text-input>
-    <app-results-panel></app-results-panel>   
+    <app-text-input [textForm]="textForm" [(userEnteredText)]="userEnteredText"></app-text-input>
+    <app-inclusion-check-button></app-inclusion-check-button>
 </form>

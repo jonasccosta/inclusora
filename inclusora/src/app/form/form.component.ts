@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Router, ActivatedRoute  } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -10,16 +11,18 @@ import { HttpClient } from '@angular/common/http';
 export class FormComponent {
 
   textForm: FormGroup;
+  userEnteredText: string;
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {}
+  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router, private route: ActivatedRoute) {
+  }
 
   ngOnInit(){
     this.textForm = this.fb.group({
       userText: ['']
     })
-
-    
   }
+
+  
 
   onSubmit(){
     const userInput = this.textForm.get('userText')?.value;
@@ -32,6 +35,8 @@ export class FormComponent {
         console.log(error)
       }
     });
+
+    this.router.navigate(['/result'], {  state: { userEnteredText: userInput } });
   }
 
 

@@ -1,7 +1,6 @@
-
-    <div class="text-input-area" [formGroup]="textForm">
+   <div class="text-input-area" [formGroup]="textForm">
             <mat-form-field class="text-input" >
-                <textarea matInput class="text-input-box" rows="24" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px";' placeholder="Type or paste your text here to receive suggestions on how to make it more inclusive..." [formControlName]="'userText'"></textarea>
+                <textarea matInput class="text-input-box" rows="24" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px";' placeholder="Type or paste your text here to receive suggestions on how to make it more inclusive..." [formControlName]="'userText'"  [(ngModel)]="userEnteredText">{{ userEnteredText }}</textarea>
             </mat-form-field>
     </div>
 

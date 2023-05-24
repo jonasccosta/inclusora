@@ -27,21 +27,17 @@ app.post('/', (req, res) => {
     console.log(wordSearcher.wordSearcher(formData.userInput, raceData));
 });
 
-app.get('/', (req,res) => {
+app.get("/result", function(req, res) {
+    res.json(wordSearcher.wordSearcher(formData.userInput, genderData));
+    console.log()
+    res.sendFile(process.cwd()+"/inclusora/dist/inclusora/index.html")
+});
 
-   // const filePath = process.cwd() + "/inclusora/dist/inclusora/index.html";
-  
-    // Send the JSON response
-    console.log("GOTTEN");
-    result = wordSearcher.wordSearcher(formData.userInput, genderData)[0][0];
-    console.log(result);
-    res.json(result);
-
-    // Serve the HTML file
-    //res.sendFile(filePath);
+app.get("/", function(req, res) {
+    res.sendFile(process.cwd()+"/inclusora/dist/inclusora/index.html")
 });
 
 app.listen(port, () => {
-    console.log(process.cwd()+"/inclusora/dist/inclusora/index.html");
-    console.log(`Server listening on the port::${port}`);
+    //console.log(process.cwd()+"/inclusora/dist/inclusora/index.html");
+    //console.log(`Server listening on the port::${port}`);
 });
