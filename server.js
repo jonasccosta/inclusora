@@ -16,9 +16,7 @@ app.use(bodyParser.urlencoded({
   }));
 app.use(express.static(process.cwd()+"/inclusora/dist/inclusora/"));
 
-var formData = "";
-var result = "";
-
+var formData = ""
 app.post('/', (req, res) => {
     formData = req.body;
 });
@@ -28,7 +26,6 @@ app.get("/result", function(req, res) {
                     ability: wordSearcher.wordSearcher(formData.userInput, abilityData),
                     race: wordSearcher.wordSearcher(formData.userInput, raceData)};
 
-    console.log(result);
     res.json(result);
 });
 
@@ -37,6 +34,6 @@ app.get("/", function(req, res) {
 });
 
 app.listen(port, () => {
-    //console.log(process.cwd()+"/inclusora/dist/inclusora/index.html");
-    //console.log(`Server listening on the port::${port}`);
+    console.log(process.cwd()+"/inclusora/dist/inclusora/index.html");
+    console.log(`Server listening on the port::${port}`);
 });
