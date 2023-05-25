@@ -6,7 +6,7 @@
     width: calc(70% - 20px);
     float: left;
     bottom: 0;
-   
+    border-radius: 15px;
   }
 
   .text-input-box{

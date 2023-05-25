@@ -1,8 +1,4 @@
-<div class="results-panel">
-    <app-suggestion-card></app-suggestion-card>
-    <app-suggestion-card></app-suggestion-card>
-    <app-suggestion-card></app-suggestion-card>
-    <app-suggestion-card></app-suggestion-card>
-    <app-suggestion-card></app-suggestion-card>
-    <app-suggestion-card></app-suggestion-card>
+
+<div class="results-panel" *ngFor="let suggestion of suggestions">
+    <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement"></app-suggestion-card>
 </div>

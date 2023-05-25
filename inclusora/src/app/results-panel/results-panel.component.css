@@ -1,5 +1,10 @@
 .results-panel{
     width: 20%;
+    left: 70%;
     float: right;
-    margin-bottom: 50px;
+    margin-right: 10%;
+    margin-top: 20px;
+    
+
+    
 }

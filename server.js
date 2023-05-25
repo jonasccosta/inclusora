@@ -29,8 +29,6 @@ app.post('/', (req, res) => {
 
 app.get("/result", function(req, res) {
     res.json(wordSearcher.wordSearcher(formData.userInput, genderData));
-    console.log()
-    res.sendFile(process.cwd()+"/inclusora/dist/inclusora/index.html")
 });
 
 app.get("/", function(req, res) {

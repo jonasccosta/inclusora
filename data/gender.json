@@ -1,31 +1,120 @@
 
-    {"he or she" : ["they"],
-    "him or her" : ["Them"],
-    "his or hers" : ["theirs"],
-    "guys" : ["all", "folks", "everyone"],
-    "ladies and gentlemen" : ["colleagues", "distinguished guests", "honorable attendees"],
-    "mailman" : ["postal worker", "mail carrier"],
-    "chairman" : ["chairperson"],
-    "salesman" : ["salesperson"],
-    "congressman" : ["member of the congress", "congressperson"],
-    "mankind" : ["humankind", "humanity"],
-    "freshman" : ["first-year student"],
-    "man-made" : ["machine-made", "synthetic", "artificial"],
-    "mothers and fathers" : ["parents"],
-    "sons and daughters" : ["children"],
-    "brothers and sisters" : ["siblings"],
-    "girlfriend or boyfriend" : ["partner", "significant other"],
-    "wife or husband": ["partner", "significant other", "spouse"],
-    "fireman and firewoman" : ["firefighter"],
-    "waiter and waitress" : ["server"],
-    "steward, stewardess" : ["flight attendant"],
-    "granddaughters and grandsons" : ["grandchildren"],
-    "manned" : ["crewed"],
-    "mr. or mrs." : ["mx."], 
-    "policeman" : ["police officer"],
-    "crewman" : ["crewperson"],
-    "foreman" : ["foreperson"], 
-    "layman" : ["layperson"],
-    "human" : ["person", "being", "homo sapien"],
-    "upperclassmen":["upper-level student"]}
+[
+        {
+            "word": "he or she",
+            "replacement": "they"
+        },
+        {
+            "word": "him or her",
+            "replacement": "them"
+        },
+        {
+            "word": "his or hers",
+            "replacement": "theirs"
+        },
+        {
+            "word": "guys",
+            "replacement": "all, folks, everyone"
+        },
+        {
+            "word": "ladies and gentlemen",
+            "replacement": "colleagues, distinguished guests, honorable attendees"
+        },
+        {
+            "word": "mailman",
+            "replacement": "postal worker, mail carrier"
+        },
+        {
+            "word": "chairman",
+            "replacement": "chairperson"
+        },
+        {
+            "word": "salesman",
+            "replacement": "salesperson"
+        },
+        {
+            "word": "congressman",
+            "replacement": "member of the congress, congressperson"
+        },
+        {
+            "word": "mankind",
+            "replacement": "humankind, humanity"
+        },
+        {
+            "word": "freshman",
+            "replacement": "first-year student"
+        },
+        {
+            "word": "man-made",
+            "replacement": "machine-made, synthetic, artificial"
+        },
+        {
+            "word": "mothers and fathers",
+            "replacement": "parents"
+        },
+        {
+            "word": "sons and daughters",
+            "replacement": "children"
+        },
+        {
+            "word": "brothers and sisters",
+            "replacement": "siblings"
+        },
+        {
+            "word": "girlfriend or boyfriend",
+            "replacement": "partner, significant other, "
+        },
+        {
+            "word": "wife or husband",
+            "replacement": "partner, significant other, spouse"
+        },
+        {
+            "word": "fireman",
+            "replacement": "firefighter"
+        },
+        {
+            "word": "waiter",
+            "replacement": "server"
+        },
+        {
+            "word": "steward",
+            "replacement": "flight attendant"
+        },
+        {
+            "word": "granddaughters and grandsons",
+            "replacement": "grandchildren"
+        },
+        {
+            "word": "manned",
+            "replacement": "crewed"
+        },
+        {
+            "word": "mr. or mrs.",
+            "replacement": "mx."
+        },
+        {
+            "word": "policeman",
+            "replacement": "police officer"
+        },
+        {
+            "word": "crewman",
+            "replacement": "crewperson"
+        },
+        {
+            "word": "foreman",
+            "replacement": "foreperson"
+        },
+        {
+            "word": "layman",
+            "replacement": "layperson"
+        },
+        {
+            "word": "human",
+            "replacement": "person, being, homo sapien"
+        },
+        {
+            "word": "upperclassmen",
+            "replacement": "upper-level student"
+        }
+    ]
     

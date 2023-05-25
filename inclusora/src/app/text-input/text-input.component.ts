@@ -1,7 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-text-input',

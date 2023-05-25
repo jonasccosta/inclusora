@@ -2,10 +2,41 @@
 
 @include mat.core();
 
-
+$custom-green-palette: (
+    50 : #e2f9f0,
+    100 : #b6efd9,
+    200 : #85e4bf,
+    300 : #54d9a5,
+    400 : #2fd192,
+    500 : #0ac97f,
+    600 : #09c377,
+    700 : #07bc6c,
+    800 : #05b562,
+    900 : #03a94f,
+    A100 : #d3ffe4,
+    A200 : #a0ffc6,
+    A400 : #6dffa7,
+    A700 : #53ff98,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
 $my-primary: mat.define-palette(mat.$deep-purple-palette, 400);
-$my-accent: mat.define-palette(mat.$green-palette, 200);
+$my-accent: mat.define-palette($custom-green-palette, 500);
 $my-typography: mat.define-typography-config(
     $headline-1: mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),);
 

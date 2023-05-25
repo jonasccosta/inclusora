@@ -2,7 +2,6 @@ mat-card{
     background-color: #7E57C2;
     color: white;
     border-radius: 15px;
-    margin: 16px;
 }
 
 mat-card-content{

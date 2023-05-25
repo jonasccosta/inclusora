@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -7,21 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./suggestion-card.component.css']
 })
 export class SuggestionCardComponent {
-  title : string;
+  @Input() title: string | any;
+  @Input() replacements: string;  
 
-  constructor(private http: HttpClient) {}
-
-  ngOnInit() {
-    console.log("INIT")
-    this.http.get('/result', {responseType: 'json'}).subscribe({
-      next: (response) => {
-      const map = response[Object.keys(response)[0]];
-      console.log(Object.keys(map)[0]);
-       this.title = Object.keys(map)[0];
-      },
-      error: (error) => {
-        console.log(error)
-      }
-    });
-  }
 }
