@@ -10,12 +10,32 @@
   }
 
   .text-input-box{
+    margin: 0;
+    border-radius: 0;
     height: 75vh;
     display:block;
+    color: #444; /* or whatever */
+    background-color: transparent;
   }
 
   .text-input-area{
     width: 100%;
+  }
+
+  mark {
+    color: transparent;
+    background-color: #d4e9ab; /* or whatever */
+  }
+
+  .backdrop {
+    overflow: auto;
+    background-color: #fff; 
+  }
+  
+  .highlights {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: transparent;
   }
 
 

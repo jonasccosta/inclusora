@@ -15,5 +15,32 @@ export class TextInputComponent {
 
   @Output() userEnteredTextChange: EventEmitter<string> = new EventEmitter<string>();
 
+  constructor(private http: HttpClient) { }
+
+  words: string[];
+
+  
+
+  ngOnInit() {
+    this.http.get('assets/triggerwords.json').subscribe((data: any) => {
+      this.words = data.words;
+    });
+  }
+
+  highlightMatches() {
+    if (!this.userEnteredText || !this.words) {
+      return;
+    }
+  
+    const regex = new RegExp(this.words.join('|'), 'gi');
+    this.userEnteredText = this.userEnteredText.replace(regex, match => `⚠️${match}`);
+
+  }
+
+
+  printing(){
+    console.log("ERROw")
+  }
+
   
 }

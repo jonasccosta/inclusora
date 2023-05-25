@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute  } from '@angular/router';
+import { TextInputComponent } from '../text-input/text-input.component';
 
 @Component({
   selector: 'app-form',
@@ -10,6 +11,7 @@ import { Router, ActivatedRoute  } from '@angular/router';
 })
 export class FormComponent {
 
+  @ViewChild(TextInputComponent) textInputComponent: TextInputComponent;
   textForm: FormGroup;
   userEnteredText: string;
 
@@ -22,10 +24,13 @@ export class FormComponent {
     })
   }
 
+  ngAfterViewInit() {
+ }
   
 
   onSubmit(){
     const userInput = this.textForm.get('userText')?.value;
+    this.textInputComponent.highlightMatches();
     this.http.post('/', { userInput })
     .subscribe({
       next: (response) => {
@@ -38,6 +43,10 @@ export class FormComponent {
 
     this.router.navigate(['/result'], {  state: { userEnteredText: userInput } });
   }
+
+
+
+ 
 
 
 }
