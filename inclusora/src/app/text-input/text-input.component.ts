@@ -37,10 +37,5 @@ export class TextInputComponent {
 
   }
 
-
-  printing(){
-    console.log("ERROw")
-  }
-
   
 }
