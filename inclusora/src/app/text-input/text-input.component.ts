@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
@@ -13,7 +14,6 @@ export class TextInputComponent {
   @Input() userEnteredText: string;
 
   @Output() userEnteredTextChange: EventEmitter<string> = new EventEmitter<string>();
-
 
   
 }

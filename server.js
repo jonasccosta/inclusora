@@ -21,14 +21,15 @@ var result = "";
 
 app.post('/', (req, res) => {
     formData = req.body;
-    console.log(formData);
-    console.log(wordSearcher.wordSearcher(formData.userInput, genderData));
-    console.log(wordSearcher.wordSearcher(formData.userInput, abilityData));
-    console.log(wordSearcher.wordSearcher(formData.userInput, raceData));
 });
 
 app.get("/result", function(req, res) {
-    res.json(wordSearcher.wordSearcher(formData.userInput, genderData));
+    var result = {gender: wordSearcher.wordSearcher(formData.userInput, genderData), 
+                    ability: wordSearcher.wordSearcher(formData.userInput, abilityData),
+                    race: wordSearcher.wordSearcher(formData.userInput, raceData)};
+
+    console.log(result);
+    res.json(result);
 });
 
 app.get("/", function(req, res) {

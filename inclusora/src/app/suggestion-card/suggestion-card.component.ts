@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-suggestion-card',
@@ -9,5 +8,5 @@ import { HttpClient } from '@angular/common/http';
 export class SuggestionCardComponent {
   @Input() title: string | any;
   @Input() replacements: string;  
-
+  @Input() text: string;
 }

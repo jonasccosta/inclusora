@@ -1,27 +1,106 @@
-{   "handicapped" : ["person with a disability"],
-    "disabled person" : ["person with a disability"],
-    "special needs" : ["person with a disability"],
-    "wheelchair-bound" : ["person who uses a wheelchair"],
-    "confined to a wheelchair" : ["person who uses a wheelchair"],
-    "afflicted with" : ["person with", "person who has", "person who is living with"],
-    "stricken with" : ["person with", "person who has", "person who is living with"],
-    "victim of" : ["person with", "person who has", "person who is living with"],
-    "suffer from" : ["person with", "person who has", "person who is living with"],
-    "crazy" : ["unbelievable", "unreasonable", "outrageous", "unreal"],
-    "insane" : ["unbelievable", "unreasonable", "outrageous", "unreal"],
-    "lame" : ["bad", "awful", "boring"],
-    "tone-deaf" : ["not in tune with", "oblivious"],
-    "stupid" : ["frustrating", "perplexing", "confusing"],
-    "blindly" : ["aimlessly"],
-    "abnormal" : ["atypical"],
-    "abnormality" : ["atypicality"],
-    "able-bodied": ["non-disabled", "does not have a disability", "is not living with a disability"],
-    "defect" : ["disability"],
-    "birth defect" : ["disability"],
-    "defective" : ["disability"],
-    "retarded" : ["intellectually disabled", "has an intellectual disability"],
-    "midget" : ["short stature", "little person", "person with dwarfism"],
-    "vertically challenged" : ["short stature", "little person", "person with dwarfism"],
-    "dwarf" : ["short stature", "little person", "person with dwarfism"],
-    "paraplegic" : ["person with paraplegia"]}
-    
+[
+    {
+        "word": "handicapped",
+        "replacement": "person with disability"
+    },
+    {
+        "word": "disabled person",
+        "replacement": "person with disability"
+    },
+    {
+        "word": "special needs",
+        "replacement": "person with disability"
+    },
+    {
+        "word": "confined to a wheelchair",
+        "replacement": "person who uses a wheelchair"
+    },
+    {
+        "word": "wheelchair-bound",
+        "replacement": "person who uses a wheelchair"
+    },
+    {
+        "word": "suffer from",
+        "replacement": "person with, person who has, person who’s living with"
+    },
+    {
+        "word": "afflicted with",
+        "replacement": "person with, person who has, person who’s living with"
+    },
+    {
+        "word": "stricken with",
+        "replacement": "person with, person who has, person who’s living with"
+    },
+    {
+        "word": "victim of",
+        "replacement": "person with, person who has, person who’s living with"
+    },
+    {
+        "word": "insane",
+        "replacement": "unbelievable, unreasonable, outrageous, unreal"
+    },
+    {
+        "word": "crazy",
+        "replacement": "unbelievable, unreasonable, outrageous, unreal"
+    },
+    {
+        "word": "lame",
+        "replacement": "bad, awful, boring"
+    },
+    {
+        "word": "tone-deaf",
+        "replacement": "not in tune with, oblivious"
+    },
+    {
+        "word": "following blindly",
+        "replacement": "following aimlessly"
+    },
+    {
+        "word": "stupid",
+        "replacement": "frustrating, perplexing, confusing"
+    },
+    {
+        "word": "abnormal",
+        "replacement": "atypical"
+    },
+    {
+        "word": "abnormality",
+        "replacement": "atypically"
+    },
+    {
+        "word": "able-bodied,",
+        "replacement": "non-disabled, does not have a disability, is not living with a disability "
+    },
+    {
+        "word": "birth defect",
+        "replacement": "disability"
+    },
+    {
+        "word": "defective",
+        "replacement": "disability"
+    },
+    {
+        "word": "defect",
+        "replacement": "disability"
+    },
+    {
+        "word": "retarded",
+        "replacement": "intellectually disabled, has an intellectual disability"
+    },
+    {
+        "word": "vertically challenged",
+        "replacement": "short stature, little person, someone with dwarfism"
+    },
+    {
+        "word": "dwarf",
+        "replacement": "short stature, little person, someone with dwarfism"
+    },
+    {
+        "word": "midget",
+        "replacement": "short stature, little person, someone with dwarfism"
+    },
+    {
+        "word": "paraplegic",
+        "replacement": "person with paraplegia"
+    }
+]

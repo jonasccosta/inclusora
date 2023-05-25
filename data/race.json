@@ -1,28 +1,106 @@
-{
-    "master bedrooms" : ["primary bedroom"],
-    "master bathroom" : ["primary bathroom"],
-    "blacklist" : ["blocklist"],
-    "whitelist" : ["allowlist"],
-    "the itis" : ["food coma"],
-    "uppity" : ["arrogant", "pompous", "vain"],
-    "peanut gallery": ["audience", "heckler"],
-    "gypsy": ["Roma people"],
-    "eskimo": ["Inuit"],
-    "grandfathered in": ["the old rules apply"],
-    "cakewalk": ["simple", "easy"],
-    "take the cake": ["simple", "easy"],
-    "crack the whip": ["let`s get to work"],
-    "redneck": ["white person"],
-    "cracker": ["white person"],
-    "whitey": ["white person"],
-    "go back to the plantation" : ["go back to the office"],
-    "ghetto": ["unpolished"],
-    "guru": ["expert, teacher"],
-    "paddy wagons" : ["police car"],
-    "bugger" : ["nuisance", "pest", "irritant"],
-    "chop chop" : ["hurry up"],
-    "fuzzy wuzzy ": ["cute", "cuddly", "soft"],
-    "jew down" : ["negotiate", "bargain"],
-    "oriental" : ["Asian"],
-    "thug" : ["troublemaker", "rowdy", "bully"]
-}
+[
+    {
+        "word": "master bedrooms",
+        "replacement": "primary bedroom"
+    },
+    {
+        "word": "master bathroom",
+        "replacement": "primary bathroom"
+    },
+    {
+        "word": "blacklist",
+        "replacement": "blocklist"
+    },
+    {
+        "word": "whitelist",
+        "replacement": "allowlist"
+    },
+    {
+        "word": "the itis",
+        "replacement": "food coma"
+    },
+    {
+        "word": "uppity",
+        "replacement": "arrogant, pompous, vain"
+    },
+    {
+        "word": "peanut gallery",
+        "replacement": "audience, heckler"
+    },
+    {
+        "word": "gypsy",
+        "replacement": "roma people"
+    },
+    {
+        "word": "eskimo",
+        "replacement": "inuit"
+    },
+    {
+        "word": "grandfathered in",
+        "replacement": "the old rules apply"
+    },
+    {
+        "word": "cakewalk",
+        "replacement": "simple, easy"
+    },
+    {
+        "word": "take the cake",
+        "replacement": "simple, easy"
+    },
+    {
+        "word": "crack the whip",
+        "replacement": "let`s get to work"
+    },
+    {
+        "word": "redneck",
+        "replacement": "white person"
+    },
+    {
+        "word": "cracker",
+        "replacement": "white person"
+    },
+    {
+        "word": "whitey",
+        "replacement": "white person"
+    },
+    {
+        "word": "back to the plantation",
+        "replacement": "back to the office"
+    },
+    {
+        "word": "ghetto",
+        "replacement": "unpolished"
+    },
+    {
+        "word": "guru",
+        "replacement": "expert, teacher"
+    },
+    {
+        "word": "paddy wagons",
+        "replacement": "police car"
+    },
+    {
+        "word": "bugger",
+        "replacement": "nuisance, pest, irritant"
+    },
+    {
+        "word": "chop chop",
+        "replacement": "hurry up"
+    },
+    {
+        "word": "fuzzy wuzzy",
+        "replacement": "cute, cuddly, soft"
+    },
+    {
+        "word": "jew down",
+        "replacement": "negotiate, bargain"
+    },
+    {
+        "word": "oriental",
+        "replacement": "asian"
+    },
+    {
+        "word": "thug",
+        "replacement": "troublemaker, rowdy, bully"
+    }
+]
