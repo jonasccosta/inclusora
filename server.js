@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
   }));
-app.use(express.static(process.cwd()+"/inclusora/dist/inclusora/"));
+app.use(express.static(process.cwd()+"/dist/inclusora/"));
 
 var formData = ""
 app.post('/', (req, res) => {
@@ -30,10 +30,10 @@ app.get("/result", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-    res.sendFile(process.cwd()+"/inclusora/dist/inclusora/index.html")
+    res.sendFile(process.cwd()+"/dist/inclusora/index.html")
 });
 
 app.listen(port, () => {
-    console.log(process.cwd()+"/inclusora/dist/inclusora/index.html");
+    console.log(process.cwd()+"/dist/inclusora/index.html");
     console.log(`Server listening on the port::${port}`);
 });
