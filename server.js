@@ -8,7 +8,7 @@ const raceData = require('./data/race.json');
 const express = require('express');
 const app = express(),
       bodyParser = require("body-parser");
-      port = 3080;
+      port = 8000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
