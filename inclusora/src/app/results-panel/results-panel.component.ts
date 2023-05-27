@@ -9,14 +9,17 @@ import {NgModule}      from '@angular/core';
 })
 export class ResultsPanelComponent {
   suggestions: any = [];
+  notEmpty: boolean;
 
   constructor(private http: HttpClient) {}
 
+  
 
   ngOnInit() {
     this.http.get('/result', {responseType: 'json'}).subscribe({
       next: (response) => {
         this.suggestions = response;
+        this.notEmpty = this.suggestions.gender.length !== 0 || this.suggestions.race.length !== 0 || this.suggestions.ability.length !== 0;
       },
       error: (error) => {
         console.log(error)

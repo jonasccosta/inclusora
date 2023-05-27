@@ -1,12 +1,23 @@
+<div class="results">
+    <div *ngIf="notEmpty;else other_content">
+        <div class="results-panel" *ngFor="let suggestion of suggestions.gender">
+            <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement" [text]="'is a gendered expression and fails to acknowledge the existence of some gender identities.'"></app-suggestion-card>
+        </div>
+    
+        <div class="results-panel" *ngFor="let suggestion of suggestions.ability">
+            <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement" [text] = "'is an ableist expression that focus on the disability and not the person.'"></app-suggestion-card>
+        </div>
+    
+        <div class="results-panel" *ngFor="let suggestion of suggestions.race">
+            <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement" [text] = "'is a racist expression that spread harmful stereotypes.'"></app-suggestion-card>
+        </div>
+    </div>
+    
+    <ng-template #other_content>
+        <div class="results-panel">
+            <app-no-words-found-message></app-no-words-found-message>
+        </div>
+        </ng-template>
 
-<div class="results-panel" *ngFor="let suggestion of suggestions.gender">
-    <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement" [text]="'is a gendered expression and fails to acknowledge the existence of women and non-binary people.'"></app-suggestion-card>
 </div>
 
-<div class="results-panel" *ngFor="let suggestion of suggestions.ability">
-    <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement" [text] = "'is an ableist expression that focus on the disability and not the person.'"></app-suggestion-card>
-</div>
-
-<div class="results-panel" *ngFor="let suggestion of suggestions.race">
-    <app-suggestion-card [title]="suggestion.word" [replacements]="suggestion.replacement" [text] = "'is a racist expression that spread harmful stereotypes.'"></app-suggestion-card>
-</div>

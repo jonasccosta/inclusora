@@ -21,12 +21,13 @@ import { SuggestionCardComponent } from './suggestion-card/suggestion-card.compo
 import {MatCardModule} from '@angular/material/card';
 import { ResultsPanelComponent } from './results-panel/results-panel.component';
 import { ResultsPageComponent } from './results-page/results-page.component';
+import { NoWordsFoundMessageComponent } from './no-words-found-message/no-words-found-message.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
-  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPanelComponent, ResultsPageComponent],
+  , TitleBarComponent, InclusionCheckButtonComponent, TextInputComponent, FormComponent, PeopleImageComponent, FooterComponent, SuggestionCardComponent, ResultsPanelComponent, ResultsPageComponent, NoWordsFoundMessageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

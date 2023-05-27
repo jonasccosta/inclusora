@@ -1,10 +1,16 @@
 .results-panel{
+   
+    margin-top: 10px;
+    margin-bottom: 20px;
+ 
+}
+
+.results{
     width: 20%;
     left: 70%;
     float: right;
     margin-right: 10%;
-    margin-top: 20px;
-    
-
+   
     
 }
+
