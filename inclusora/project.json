@@ -13,7 +13,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "options": {
-        "outputPath": "dist/inclusora",
+        "outputPath": "../dist/inclusora",
         "index": "src/index.html",
         "main": "src/main.ts",
         "polyfills": [

@@ -2,7 +2,10 @@
 
 function wordSearcher(userText, wordData) {
     result = []
-    userText = userText.toLowerCase();    
+    if(userText !== undefined){
+      userText = userText.toLowerCase();    
+    }
+    
 
     for(const [key, value] of Object.entries(wordData)){
          if (userText && userText.includes(value.word)) {
